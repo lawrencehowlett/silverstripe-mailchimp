@@ -1,0 +1,17 @@
+form#MailChimpForm_MailChimpForm fieldset legend {margin-bottom:5px; font-weight:bold;}
+p#MailChimpForm_MailChimpForm_error {margin-bottom:0;}
+form#MailChimpForm_MailChimpForm .bad {
+    background: none repeat scroll 0 0 #f2dede;
+    border-color: #ebccd1;
+    border-radius: 4px;
+    color: #a94442;
+    padding: 15px;	
+}
+form#MailChimpForm_MailChimpForm .good {
+	background: none repeat scroll 0 0 #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #3c763d;
+    padding: 15px;	
+}
+

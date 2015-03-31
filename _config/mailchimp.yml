@@ -1,0 +1,18 @@
+SiteConfig:
+  extensions:
+    - MailChimpSettings
+
+Page:
+  extensions:
+    - MailChimpPageExtension
+
+Page_Controller:
+  extensions:
+    - MailChimpPageControllerExtension
+
+Director:
+  rules: 
+    '$URLSegment/MailChimpForm//$Action/$ID/$Name' : 'MailChimpForm_Controller',
+    '$URLSegment/$OtherURLSegment/MailChimpForm//$Action/$ID/$Name' : 'MailChimpForm_Controller',
+    '$URLSegment/$OtherURLSegment/$OtherOtherURLSegment/MailChimpForm//$Action/$ID/$Name' : 'MailChimpForm_Controller',
+    '$URLSegment/$OtherURLSegment/$OtherOtherURLSegment/$OtherOtherOtherURLSegment/MailChimpForm//$Action/$ID/$Name' : 'MailChimpForm_Controller',
